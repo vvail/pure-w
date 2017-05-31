@@ -26,3 +26,50 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.bg-grey {
+    background-color: $color__grey_light;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-primary {
+    background: $color__primary;
+    background: -webkit-linear-gradient($color__primary , lighten($color__primary, 5%));
+    background: -o-linear-gradient($color__primary , lighten($color__primary, 5%));
+    background: -moz-linear-gradient($color__primary , lighten($color__primary, 5%));
+    background: linear-gradient($color__primary , lighten($color__primary, 5%));
+    background-color: $color__primary;
+    color: white;
+}
+
+header#single-post {
+
+    &.entry-header {
+		@extend .bg-primary;
+        min-height: 150px;
+		padding-left: 1em;
+		padding-right: 1em;
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+.entry-content {
+	img.wp-post-image {
+		box-shadow: 0 8px 18px -3px rgba(0,0,0,.5);
+		margin-top: 1em;
+	}
+	margin: 0;
+}
+
+.entry-header {
+	h2 {
+		margin-top: 1.5em;
+		margin-bottom: 0.5em;
+		font-weight: normal;
+	}
+}

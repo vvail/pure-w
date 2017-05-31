@@ -28,6 +28,7 @@
 
 	<div class="entry-content">
 		<?php
+			the_post_thumbnail('thumbnail', ['class' => 'alignleft']);
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'pure-w' ), array( 'span' => array( 'class' => array() ) ) ),
@@ -45,3 +46,4 @@
 		<?php pure_w_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+<hr>

@@ -105,7 +105,7 @@ add_action( 'widgets_init', 'pure_w_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pure_w_scripts() {
-	wp_enqueue_style( 'pure-w-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'pure-w-style', get_stylesheet_directory_uri() . '/css/style.css');
 
 	wp_enqueue_script( 'pure-w-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

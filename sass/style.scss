@@ -41,6 +41,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# PureCSS
+	## Grids Responsive
+# Layout
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -104,3 +107,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# PureCSS Grids
+--------------------------------------------------------------*/
+@import "../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/grids";
+@import "../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/grids-responsive";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/pure-w";

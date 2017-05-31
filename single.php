@@ -9,13 +9,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area <?php if (is_active_sidebar( 'sidebar-1' )): ?>pure-u-1 pure-u-md-2-3 <?php endif; ?>">
 		<main id="main" class="site-main" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_format() );
+			// get_template_part( 'template-parts/content', get_post_format() );
+			get_template_part( 'template-parts/content', 'single');
 
 			the_post_navigation();
 
